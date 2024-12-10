@@ -1,0 +1,13 @@
+{
+  "firstname" : "Mark",
+  "lastname" : "Flower",
+  "gender" : "Male",
+  "age" : 40,
+  "salary" : 50000,
+  
+  "Address" : 
+             {
+  "Street" : "Park Avenue",
+  "City"    : "NewYark"
+              }
+}

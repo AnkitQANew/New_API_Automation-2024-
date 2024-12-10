@@ -1,0 +1,7 @@
+{
+  "firstname" : "Mark",
+  "lastname" : "Flower",
+  "gender" : "Male",
+  "age" : 40,
+  "salary" : 50000.0
+}

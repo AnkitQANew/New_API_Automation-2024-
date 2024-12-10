@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "Message": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "PostOffice": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Description": {
+            "type": "string"
+          },
+          "BranchType": {
+            "type": "string"
+          },
+          "DeliveryStatus": {
+            "type": "string"
+          },
+          "Taluk": {
+            "type": "string"
+          },
+          "Circle": {
+            "type": "string"
+          },
+          "District": {
+            "type": "string"
+          },
+          "Division": {
+            "type": "string"
+          },
+          "Region": {
+            "type": "string"
+          },
+          "State": {
+            "type": "string"
+          },
+          "Country": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "Name",
+          "Description",
+          "BranchType",
+          "DeliveryStatus",
+          "Taluk",
+          "Circle",
+          "District",
+          "Division",
+          "Region",
+          "State",
+          "Country"
+        ]
+      }
+    }
+  },
+  "required": [
+    "Message",
+    "Status",
+    "PostOffice"
+  ]
+}
