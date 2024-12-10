@@ -1,0 +1,23 @@
+[
+{
+  "firstname" : "Mark",
+  "lastname" : "Flower",
+  "gender" : "Male",
+  "age" : 40,
+  "salary" : 50000.0
+},
+{
+  "firstname" : "Ana",
+  "lastname" : "syra",
+  "gender" : "Female",
+  "age" : 40,
+  "salary" : 50000.0
+},
+{
+  "firstname" : "Eva",
+  "lastname" : "jakson",
+  "gender" : "Female",
+  "age" : 34,
+  "salary" : 50000.0
+}
+]
