@@ -17,7 +17,7 @@ public class NestedJSON_Payload
 	@Test
 	public void Create_User() throws JsonProcessingException 
 	{
-		//////////// ************************ Creating the Employee Details Class Object *******************************////////////////////
+		//////////// ************************ Creating the EmployeeDetails Class Object *******************************////////////////////
 		
 		Employes_Details   OBJ_Employes_Details = new Employes_Details ();
 				
