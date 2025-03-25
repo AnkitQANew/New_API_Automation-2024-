@@ -25,11 +25,8 @@
      <!-- https://mvnrepository.com/artifact/org.testng/testng -->
    
 
-   <dependency>
-   	<groupId>BDD_API_Automation</groupId>
-   	<artifactId>BDD_API_Automation</artifactId>
-   	<version>0.0.1-SNAPSHOT</version>
-   </dependency>
+
+   
    <dependency>
    	<groupId>org.testng</groupId>
    	<artifactId>testng</artifactId>

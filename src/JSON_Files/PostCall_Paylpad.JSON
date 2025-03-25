@@ -1,14 +1,7 @@
 {
- "firstName" : "Ankit SRV",
- "lastName"  : "Srv",
- "gender"    : "Male",
- "age"       : 30,
- "salary"    : 20000.30,
- "hobby"     : ["singing", "writing", "cricket"],
- "Address"   : {
-        "Street": "Arifac Avenue Hauz Khas",
-	"City": "RK Puram, Delhi 110016",
-	"State": "New Delhi",
-	"pincode":110066
-}  
-}               
+  "firstname" : "Mark",
+  "lastname" : "Flower",
+  "gender" : "Male",
+  "age" : 40,
+  "salary" : 50000.0
+}

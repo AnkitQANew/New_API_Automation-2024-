@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome6",
+    "definitions": {
+        "Welcome6": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "args": {
+                    "$ref": "#/definitions/Args"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "files": {
+                    "$ref": "#/definitions/Args"
+                },
+                "form": {
+                    "$ref": "#/definitions/Args"
+                },
+                "headers": {
+                    "$ref": "#/definitions/Headers"
+                },
+                "json": {
+                    "$ref": "#/definitions/JSON"
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ]
+                }
+            },
+            "required": [
+                "args",
+                "data",
+                "files",
+                "form",
+                "headers",
+                "json",
+                "origin",
+                "url"
+            ],
+            "title": "Welcome6"
+        },
+        "Args": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "Args"
+        },
+        "Headers": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Accept": {
+                    "type": "string"
+                },
+                "Accept-Encoding": {
+                    "type": "string"
+                },
+                "Cache-Control": {
+                    "type": "string"
+                },
+                "Content-Length": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "Content-Type": {
+                    "type": "string"
+                },
+                "Host": {
+                    "type": "string"
+                },
+                "Postman-Token": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "User-Agent": {
+                    "type": "string"
+                },
+                "X-Amzn-Trace-Id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Accept",
+                "Accept-Encoding",
+                "Cache-Control",
+                "Content-Length",
+                "Content-Type",
+                "Host",
+                "Postman-Token",
+                "User-Agent",
+                "X-Amzn-Trace-Id"
+            ],
+            "title": "Headers"
+        },
+        "JSON": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "age": {
+                    "type": "integer"
+                },
+                "firstname": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "lastname": {
+                    "type": "string"
+                },
+                "salary": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "age",
+                "firstname",
+                "gender",
+                "lastname",
+                "salary"
+            ],
+            "title": "JSON"
+        }
+    }
+}

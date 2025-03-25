@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-22T16:29:36 IST" name="Default suite" finished-at="2024-12-22T16:29:38 IST" duration-ms="2198">
+  <suite started-at="2025-03-25T15:13:50 IST" name="Default suite" finished-at="2025-03-25T15:13:53 IST" duration-ms="2805">
     <groups>
     </groups>
-    <test started-at="2024-12-22T16:29:36 IST" name="Default test" finished-at="2024-12-22T16:29:38 IST" duration-ms="2198">
-      <class name="AuthDemo.OAuth2">
-        <test-method signature="getOAuth_token()[pri:1, instance:AuthDemo.OAuth2@3c77d488]" started-at="2024-12-22T16:29:36 IST" name="getOAuth_token" finished-at="2024-12-22T16:29:38 IST" duration-ms="1655" status="PASS">
+    <test started-at="2025-03-25T15:13:50 IST" name="Default test" finished-at="2025-03-25T15:13:53 IST" duration-ms="2805">
+      <class name="New.verifyNotNull">
+        <test-method signature="verify_not_Null_inResponse()[pri:0, instance:New.verifyNotNull@26e356f0]" started-at="2025-03-25T15:13:50 IST" name="verify_not_Null_inResponse" finished-at="2025-03-25T15:13:53 IST" duration-ms="2780" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getOAuth_token -->
-        <test-method signature="POST_Call_throught_Token()[pri:2, instance:AuthDemo.OAuth2@3c77d488]" started-at="2024-12-22T16:29:38 IST" name="POST_Call_throught_Token" finished-at="2024-12-22T16:29:38 IST" duration-ms="517" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- POST_Call_throught_Token -->
-      </class> <!-- AuthDemo.OAuth2 -->
+        </test-method> <!-- verify_not_Null_inResponse -->
+      </class> <!-- New.verifyNotNull -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
