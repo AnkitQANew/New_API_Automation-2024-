@@ -12,6 +12,9 @@ public class GET_API_ResponseCodeValidation {
 	@Test
 	public void get_API_ResponseCodeValidation() {
 		
+		
+		
+		
 		RestAssured.baseURI   = "http://postalpincode.in";
 		RestAssured.basePath  = "/api/pincode/110016";
 		
