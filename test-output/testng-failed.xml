@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="New.JSONSchemaValidator">
+      <class name="New.ValidateResponseHeader">
         <methods>
-          <include name="jsonSchemaValidatoin"/>
+          <include name="validateSpecificHeader"/>
         </methods>
-      </class> <!-- New.JSONSchemaValidator -->
+      </class> <!-- New.ValidateResponseHeader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

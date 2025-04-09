@@ -19,6 +19,8 @@ public class Get_API_Specific_Response_Validation
 		  Response apiResponse = RestAssured.get();
 		  
 		  String resp   = apiResponse.body().path("PostOffice.Name[1]");
+		  
+		  String resp2  =  apiResponse.jsonPath().get("PostOffice.Name[1]");
 		   
 		 
 		  Assert.assertEquals(resp, "Hauz Khas");
@@ -26,6 +28,8 @@ public class Get_API_Specific_Response_Validation
 		  System.out.println(resp);
 		  
 		  System.out.println(apiResponse.prettyPrint());
+		  
+		  System.out.println("The json path is :::::::::::::::::::"+resp2);
 		  
 	}
 
