@@ -38,7 +38,7 @@ public class Two_JSON_Comparision {
     
     
          @Test
-         public void API_2() {
+         public void API_2() throws JsonMappingException, JsonProcessingException {
 			
         	 Response response_1 = RestAssured.get("http://postalpincode.in/api/pincode/110016");
     		 
@@ -58,7 +58,20 @@ public class Two_JSON_Comparision {
     		 System.out.println("API 2 executed ++++++++++++++++++++++"  );
     		 
     		 
-   		         System.out.println(resp_1.equals(resp_2));
+    		 
+    		 
+    	  ObjectMapper    objMapper = new ObjectMapper ();
+    		 
+   		  JsonNode jsonbdy_1  = objMapper.readTree(resp_1);
+   		 
+   		  JsonNode jsonbdy_2  = objMapper.readTree(resp_2);
+   		  
+   		  System.out.println(jsonbdy_1.equals(jsonbdy_2));
+    		 
+    		 
+    		 
+    		 
+   		        
 		}
 	   
     
