@@ -1,0 +1,70 @@
+package New;
+
+import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+
+public class Two_JSON_Comparision {
+
+    //@Test
+	public void API_1() throws JsonMappingException, JsonProcessingException {
+		
+ 
+		String s1 = "{\r\n"
+				+ "    \"error\": \"Missing API key.\",\r\n"
+				+ "    \"how_to_get_one\": \"https://reqres.in/signup\"\r\n"
+				+ "}" ;
+		
+		String s2 = "{\r\n"
+				+ "    \"error\": \"Missing API key.\",\r\n"
+				+ "    \"how_to_get_one\": \"https://reqres.in/signup\"\r\n"
+				+ "}";
+		
+		 ObjectMapper    objMapper = new ObjectMapper ();
+		 
+		  JsonNode jsonbdy_1  = objMapper.readTree(s1);
+		 
+		  JsonNode jsonbdy_2  = objMapper.readTree(s2);
+		  
+		  System.out.println(jsonbdy_1.equals(jsonbdy_2));
+    }
+    
+    
+         @Test
+         public void API_2() {
+			
+        	 Response response_1 = RestAssured.get("http://postalpincode.in/api/pincode/110016");
+    		 
+    		 System.out.println(response_1.getStatusCode());
+    		 
+    		 String resp_1   =    response_1.getBody().asString();		
+    		 
+    		 System.out.println("API 1 executed ++++++++++++++++++++++"  );
+    		 
+    		 
+        	 Response response_2 = RestAssured.get("http://postalpincode.in/api/pincode/110016");
+    		 
+    		 System.out.println(response_1.getStatusCode());
+    		 
+    		 String resp_2   =    response_2.getBody().asString();		
+    		 
+    		 System.out.println("API 2 executed ++++++++++++++++++++++"  );
+    		 
+    		 
+   		         System.out.println(resp_1.equals(resp_2));
+		}
+	   
+    
+    
+	
+	
+	
+
+}
